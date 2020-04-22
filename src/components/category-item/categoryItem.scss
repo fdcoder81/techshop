@@ -1,0 +1,22 @@
+.category-item {
+  border: 1px solid aquamarine;
+  width: 35rem;
+  height: 24rem;
+  margin: 4rem;
+  padding: 2rem;
+
+  .category-box {
+    width: 100%;
+    height: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 1rem;
+  }
+}
