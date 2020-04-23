@@ -5,6 +5,10 @@
   margin: 4rem;
   padding: 2rem;
 
+  &:hover {
+    cursor: pointer;
+  }
+
   .category-box {
     width: 100%;
     height: 90%;

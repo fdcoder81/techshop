@@ -1,18 +1,34 @@
 import React from "react";
+import { connect } from "react-redux";
+import PropTypes from "prop-types";
+import { addItem } from "../../actions/cartActions";
+import "./productItem.scss";
 
-const ProductItem = ({ item }) => {
+const ProductItem = ({ item, addItem }) => {
   const { title, price, imgUrl } = item;
   const imgSrc = require(`../../${imgUrl}`);
 
   return (
     <div className="product-item">
-      <div className="img-container">
-        <img src={imgSrc} alt="" />
-      </div>
+      <div
+        className="img-container"
+        style={{
+          backgroundImage: `url("${imgSrc}")`,
+        }}
+      ></div>
       <div className="title">{title}</div>
-      <p className="price">{price}</p>
+      <p className="price">{price}£</p>
+      <button onClick={() => addItem(item)}>Add To Cart</button>
     </div>
   );
 };
 
-export default ProductItem;
+ProductItem.propTypes = {
+  addItem: PropTypes.func.isRequired,
+};
+
+const mapDispatchToProps = {
+  addItem,
+};
+
+export default connect(null, mapDispatchToProps)(ProductItem);

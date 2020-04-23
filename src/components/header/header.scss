@@ -3,10 +3,46 @@
   flex-direction: column;
   margin-bottom: 5rem;
 
+  .active {
+    color: green;
+  }
+
   .logo-container {
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
     img {
-      width: 25rem;
+      width: 30rem;
+    }
+
+    .cart-container {
+      display: flex;
+      align-items: center;
+      padding: 2rem;
+
+      .cart {
+        width: 3.5rem;
+        height: 3.5rem;
+      }
+
+      .cart-icon {
+        position: relative;
+
+        .counter {
+          position: absolute;
+          top: 30%;
+          left: 50%;
+          transform: translateY(-50%) translateX(-50%);
+          font-size: 1.5rem;
+          font-weight: 600;
+        }
+      }
+
+      p {
+        font-size: 1.5rem;
+        margin-right: 1rem;
+      }
     }
   }
 

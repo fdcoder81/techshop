@@ -5,35 +5,35 @@ export const SHOP_DATA = {
       {
         id: 1,
         title:
-          "HP 15s-fq1012na 15.6 Inch Full HD Laptop, Intel Core i5-1035G1, 8 GB RAM, 256 GB SSD, Windows 10 Home, Silver",
+          "HP 15s-fq1012na 15.6 Inch Full HD Laptop, Intel Core i5-1035G1, 8 GB RAM, 256 GB SSD",
         price: "549",
         imgUrl: "images/1.jpg",
       },
       {
         id: 2,
         title:
-          "Huawei MateBook D 15 2020 - 15.6 Inch Laptop with FullView 1080P FHD Ultrabook PC (AMD Ryzen 5 3500U, 8GB RAM, 256GB SSD, Windows 10 Home, Multi-screen Collaboration",
+          "Huawei MateBook D 15 2020 - 15.6 Inch Ultrabook PC (AMD Ryzen 5 3500U, 8GB RAM, 256GB SSD",
         price: "455",
         imgUrl: "images/2.jpg",
       },
       {
         id: 3,
         title:
-          "Lenovo IdeaPad Slim 1 14 Inch HD Laptop - (AMD A4, 4 GB RAM, 64 GB emmC, Windows 10 Home) - Platinum Grey",
+          "Lenovo IdeaPad Slim 1 14 Inch HD Laptop - (AMD A4, 4 GB RAM, 64 GB emmC)",
         price: "239",
         imgUrl: "images/3.jpg",
       },
       {
         id: 4,
         title:
-          "ASUS VivoBook X712FA 17.3 Inch HD Laptop (Intel 10th Gen i3 -10110U Processor, 8 GB RAM, 1 TB HDD, Windows 10, Includes Bag)",
+          "ASUS VivoBook X712FA 17.3 Inch HD Laptop (Intel 10th Gen i3 -10110U Processor, 8 GB RAM, 1 TB HDD)",
         price: "480",
         imgUrl: "images/4.jpg",
       },
       {
         id: 5,
         title:
-          "HP 15s-fq0024na 15.6 Inch Full HD Laptop - (Silver) (Intel Pentium Gold 5405U, 4 GB, 128 GB SSD, Windows 10 Home)",
+          "HP 15s-fq0024na 15.6 Inch Full HD Laptop - (Silver) (Intel Pentium Gold 5405U, 4 GB, 128 GB SSD)",
         price: "529",
         imgUrl: "images/5.jpg",
       },
@@ -45,21 +45,21 @@ export const SHOP_DATA = {
       {
         id: 1,
         title:
-          "Dell OptiPlex Intel i5-2400 Quad Core i5 8GB RAM 240GB SSD + 500GB HDD WiFi Windows 10 Desktop PC Computer",
+          "Dell OptiPlex Intel i5-2400 Quad Core i5 8GB RAM 240GB SSD + 500GB HDD WiFi",
         price: "234",
         imgUrl: "images/pc1.jpg",
       },
       {
         id: 2,
         title:
-          "Dell OptiPlex 7010 SFF Core i3 8GB 1TB DVDRW WiFi Windows 10 Professional 64-Bit Desktop PC Computer With Antivirus",
+          "Dell OptiPlex 7010 SFF Core i3 8GB 1TB DVDRW WiFi Windows 10 Professional 64-Bit Desktop PC",
         price: "119",
         imgUrl: "images/pc2.jpg",
       },
       {
         id: 3,
         title:
-          "CyberpowerPC Wyvern Gaming PC - Intel Core i5-9400F, Nvidia RTX 2060 6GB, 16GB RAM, 240GB SSD, 1TB HDD, 550W 80+ PSU, Wifi, Windows 10",
+          "CyberpowerPC Wyvern Gaming PC - Intel Core i5-9400F, Nvidia RTX 2060 6GB, 16GB RAM, 240GB SSD, 1TB HDD, 550W 80+ PSU, Wifi",
         price: "890",
         imgUrl: "images/pc3.jpg",
       },
