@@ -1,0 +1,32 @@
+.shopping-cart {
+  width: 80%;
+  margin: 0 auto;
+  .cart-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid green;
+  }
+
+  .cart-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4rem;
+    border-bottom: 1px solid black;
+    padding-bottom: 2rem;
+
+    img {
+      width: 20rem;
+    }
+
+    .description {
+      font-size: 1.5rem;
+      max-width: 30rem;
+    }
+
+    .price {
+      font-size: 2rem;
+    }
+  }
+}

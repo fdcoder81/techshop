@@ -1,12 +1,4 @@
 .header {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 5rem;
-
-  .active {
-    color: green;
-  }
-
   .logo-container {
     display: flex;
     justify-content: space-between;
@@ -20,6 +12,7 @@
       display: flex;
       align-items: center;
       padding: 2rem;
+      margin-right: 5rem;
 
       .cart {
         width: 3.5rem;

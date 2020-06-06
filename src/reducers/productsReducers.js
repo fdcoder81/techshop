@@ -1,8 +1,8 @@
-import { SHOP_DATA } from "../SHOP_DATA";
+import { DATA } from '../DATA';
 
 export default (state = [], action) => {
   switch (action.type) {
     default:
-      return SHOP_DATA;
+      return DATA;
   }
 };

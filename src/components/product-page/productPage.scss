@@ -1,0 +1,9 @@
+.product-page {
+  display: flex;
+
+  .product-list {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
