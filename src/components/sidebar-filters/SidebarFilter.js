@@ -1,8 +1,20 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React, { useState, useEffect } from 'react';
+import { connect } from 'react-redux';
+import { filterByBrand, updateBrandsToFilter } from '../../actions/actions';
 import './sidebarFilter.scss';
 
-const SidebarFilter = ({ products }) => {
+const SidebarFilter = ({ products, filterByBrand, updateBrandsToFilter }) => {
+  /*   const [checkboxBrand, setCheckBoxBrand] = useState([]);
+   */
+  /*  useEffect(() => {
+    console.log(checkboxBrand);
+  }); */
+
+  const handleChange = (name, e) => {
+    updateBrandsToFilter(name, e.target.checked);
+    filterByBrand();
+  };
+
   const brands = products
     .map((item) => item.brand)
     .filter((item, index, self) => self.indexOf(item) === index);
@@ -13,7 +25,11 @@ const SidebarFilter = ({ products }) => {
       {brands.map((brand) => {
         return (
           <div key={brand} className='input-group'>
-            <input type='checkbox' name='' />
+            <input
+              onChange={(e) => handleChange(e.target.name, e)}
+              type='checkbox'
+              name={brand}
+            />
             <label>{brand}</label>
           </div>
         );
@@ -22,6 +38,6 @@ const SidebarFilter = ({ products }) => {
   );
 };
 
-SidebarFilter.propTypes = {};
-
-export default SidebarFilter;
+export default connect(null, { filterByBrand, updateBrandsToFilter })(
+  SidebarFilter
+);

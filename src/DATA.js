@@ -1,4 +1,4 @@
-export const DATA = [
+const DATA = [
   {
     id: 1,
     title:
@@ -160,3 +160,5 @@ export const DATA = [
     brand: 'samsung',
   },
 ];
+
+export default DATA;
