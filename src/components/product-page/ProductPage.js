@@ -11,7 +11,8 @@ const ProductPage = ({ products, filteredProducts, fetchData }) => {
   }, [fetchData]);
 
   if (filteredProducts.length === 0) {
-    fetchData();
+    console.log('filteredProducts is empty');
+    /*   fetchData(); */
   }
 
   return (

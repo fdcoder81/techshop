@@ -6,6 +6,7 @@ const DATA = [
     price: '549',
     imgUrl: 'images/1.jpg',
     brand: 'hp',
+    category: 'laptop',
   },
   {
     id: 2,
@@ -14,6 +15,7 @@ const DATA = [
     price: '455',
     imgUrl: 'images/2.jpg',
     brand: 'huawei',
+    category: 'laptop',
   },
   {
     id: 3,
@@ -22,6 +24,7 @@ const DATA = [
     price: '239',
     imgUrl: 'images/3.jpg',
     brand: 'lenovo',
+    category: 'laptop',
   },
   {
     id: 4,
@@ -30,6 +33,7 @@ const DATA = [
     price: '480',
     imgUrl: 'images/4.jpg',
     brand: 'asus',
+    category: 'laptop',
   },
   {
     id: 5,
@@ -38,6 +42,7 @@ const DATA = [
     price: '529',
     imgUrl: 'images/5.jpg',
     brand: 'hp',
+    category: 'laptop',
   },
 
   {
@@ -47,6 +52,7 @@ const DATA = [
     price: '234',
     imgUrl: 'images/pc1.jpg',
     brand: 'dell',
+    category: 'desktop',
   },
   {
     id: 8,
@@ -55,6 +61,7 @@ const DATA = [
     price: '119',
     imgUrl: 'images/pc2.jpg',
     brand: 'dell',
+    category: 'desktop',
   },
   {
     id: 9,
@@ -63,6 +70,7 @@ const DATA = [
     price: '890',
     imgUrl: 'images/pc3.jpg',
     brand: 'cyberpowerpc',
+    category: 'desktop',
   },
   {
     id: 10,
@@ -71,6 +79,7 @@ const DATA = [
     price: '2545',
     imgUrl: 'images/pc4.jpg',
     brand: 'apple',
+    category: 'laptop',
   },
   {
     id: 11,
@@ -79,6 +88,7 @@ const DATA = [
     price: '1628',
     imgUrl: 'images/pc5.jpg',
     brand: 'apple',
+    category: 'desktop',
   },
 
   {
@@ -87,6 +97,7 @@ const DATA = [
     price: '129',
     imgUrl: 'images/monitor1.jpg',
     brand: 'samsung',
+    category: 'monitor',
   },
   {
     id: 13,
@@ -95,6 +106,7 @@ const DATA = [
     price: '99',
     imgUrl: 'images/monitor2.jpg',
     brand: 'dell',
+    category: 'monitor',
   },
   {
     id: 14,
@@ -102,6 +114,7 @@ const DATA = [
     price: '79',
     imgUrl: 'images/monitor3.jpg',
     brand: 'acer',
+    category: 'monitor',
   },
   {
     id: 15,
@@ -110,6 +123,7 @@ const DATA = [
     price: '179',
     imgUrl: 'images/monitor4.jpg',
     brand: 'hp',
+    category: 'monitor',
   },
   {
     id: 16,
@@ -118,6 +132,7 @@ const DATA = [
     price: '119',
     imgUrl: 'images/monitor5.jpg',
     brand: 'hp',
+    category: 'monitor',
   },
 
   {
@@ -127,6 +142,7 @@ const DATA = [
     price: '969',
     imgUrl: 'images/tablet1.jpg',
     brand: 'apple',
+    category: 'tablet',
   },
   {
     id: 18,
@@ -135,6 +151,7 @@ const DATA = [
     price: '49',
     imgUrl: 'images/tablet2.jpg',
     brand: 'amazon',
+    category: 'tablet',
   },
   {
     id: 19,
@@ -143,6 +160,7 @@ const DATA = [
     price: '84',
     imgUrl: 'images/tablet3.jpg',
     brand: 'huawei',
+    category: 'tablet',
   },
   {
     id: 20,
@@ -151,6 +169,7 @@ const DATA = [
     price: '99',
     imgUrl: 'images/tablet4.jpg',
     brand: 'lenovo',
+    category: 'tablet',
   },
   {
     id: 21,
@@ -158,6 +177,7 @@ const DATA = [
     price: '191',
     imgUrl: 'images/tablet5.jpg',
     brand: 'samsung',
+    category: 'tablet',
   },
 ];
 
