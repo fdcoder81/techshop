@@ -28,7 +28,11 @@ const Header = ({ quantity }) => {
 
 const mapStateToProps = (state) => {
   return {
-    quantity: state.cart.quantity,
+    quantity: state.cart.cartItems.reduce(
+      (accummulatedQuantity, cartItem) =>
+        accummulatedQuantity + cartItem.quantity,
+      0
+    ),
   };
 };
 

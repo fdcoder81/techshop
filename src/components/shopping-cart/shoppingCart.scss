@@ -28,5 +28,36 @@
     .price {
       font-size: 2rem;
     }
+
+    .quantity {
+      display: flex;
+    }
+
+    .value {
+      margin: 0 0.5rem;
+    }
+
+    .remove {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+
+      &:hover {
+        cursor: pointer;
+        color: red;
+      }
+    }
+
+    .arrow {
+      cursor: pointer;
+    }
+  }
+
+  .total {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+    padding: 2rem;
+    font-size: 3rem;
+    background-color: lightgray;
   }
 }

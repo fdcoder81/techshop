@@ -1,28 +1,26 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import {
-  filterByBrand,
+  filter,
   updateBrandsToFilter,
   updateCategoriesToFilter,
-  filterByCategory,
 } from '../../actions/actions';
 import './sidebarFilter.scss';
 
 const SidebarFilter = ({
   products,
-  filterByBrand,
-  filterByCategory,
+  filter,
   updateBrandsToFilter,
   updateCategoriesToFilter,
 }) => {
   const handleBrandChange = (name, e) => {
     updateBrandsToFilter(name, e.target.checked);
-    filterByBrand();
+    filter();
   };
 
   const handleCategoryChange = (name, e) => {
     updateCategoriesToFilter(name, e.target.checked);
-    filterByCategory();
+    filter();
   };
 
   const brands = products
@@ -67,8 +65,7 @@ const SidebarFilter = ({
 };
 
 export default connect(null, {
-  filterByBrand,
-  filterByCategory,
+  filter,
   updateBrandsToFilter,
   updateCategoriesToFilter,
 })(SidebarFilter);

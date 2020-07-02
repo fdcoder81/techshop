@@ -1,26 +1,8 @@
-import { ADD_ITEM } from '../actions/types';
+import { ADD_ITEM, REMOVE_ITEM, REMOVE_ITEM_QUANTITY } from '../actions/types';
+import { addItemToCart, removeItemQuantity } from '../utils/utils';
 
 const INITIALSTATE = {
   cartItems: [],
-};
-
-const addItemToCart = (cartItems, cartItemToAdd) => {
-  const existingItem = cartItems.find(
-    (cartItem) => cartItem.id === cartItemToAdd.id
-  );
-
-  if (existingItem) {
-    return cartItems.map((cartItem) => {
-      return (
-        cartItem.id === cartItemToAdd.id && {
-          ...cartItem,
-          quantity: cartItem.quantity + 1,
-        }
-      );
-    });
-  }
-
-  return [...cartItems, { ...cartItemToAdd, quantity: 1 }];
 };
 
 const cartReducer = (state = INITIALSTATE, action) => {
@@ -29,6 +11,20 @@ const cartReducer = (state = INITIALSTATE, action) => {
       return {
         ...state,
         cartItems: addItemToCart(state.cartItems, action.payload),
+      };
+
+    case REMOVE_ITEM:
+      return {
+        ...state,
+        cartItems: state.cartItems.filter(
+          (item) => item.id !== action.payload.id
+        ),
+      };
+
+    case REMOVE_ITEM_QUANTITY:
+      return {
+        ...state,
+        cartItems: removeItemQuantity(state.cartItems, action.payload),
       };
 
     default:

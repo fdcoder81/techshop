@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { addItem } from '../../actions/actions';
 import './productItem.scss';
 
-const ProductItem = ({ item, addItem }) => {
+const ProductItem = ({ item, addItem, toastNotify }) => {
   const { title, price, imgUrl } = item;
   const imgSrc = require(`../../${imgUrl}`);
 
@@ -18,7 +18,14 @@ const ProductItem = ({ item, addItem }) => {
       ></div>
       <div className='title'>{title}</div>
       <p className='price'>{price}£</p>
-      <button onClick={() => addItem(item)}>Add To Cart</button>
+      <button
+        onClick={() => {
+          addItem(item);
+          toastNotify();
+        }}
+      >
+        Add To Cart
+      </button>
     </div>
   );
 };

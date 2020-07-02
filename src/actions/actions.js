@@ -1,10 +1,11 @@
 import {
   ADD_ITEM,
-  FILTER_BY_BRAND,
-  FILTER_BY_CATEGORY,
   FETCH_DATA,
   UPDATE_BRAND_FILTER,
   UPDATE_CATEGORY_FILTER,
+  FILTER,
+  REMOVE_ITEM,
+  REMOVE_ITEM_QUANTITY,
 } from './types';
 import DATA from '../DATA';
 
@@ -18,6 +19,20 @@ export const fetchData = () => {
 export const addItem = (item) => {
   return {
     type: ADD_ITEM,
+    payload: item,
+  };
+};
+
+export const removeItem = (item) => {
+  return {
+    type: REMOVE_ITEM,
+    payload: item,
+  };
+};
+
+export const removeItemQuantity = (item) => {
+  return {
+    type: REMOVE_ITEM_QUANTITY,
     payload: item,
   };
 };
@@ -36,14 +51,8 @@ export const updateCategoriesToFilter = (category, isChecked) => {
   };
 };
 
-export const filterByBrand = () => {
+export const filter = () => {
   return {
-    type: FILTER_BY_BRAND,
-  };
-};
-
-export const filterByCategory = () => {
-  return {
-    type: FILTER_BY_CATEGORY,
+    type: FILTER,
   };
 };

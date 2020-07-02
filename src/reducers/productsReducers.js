@@ -1,7 +1,6 @@
 import {
   FETCH_DATA,
-  FILTER_BY_BRAND,
-  FILTER_BY_CATEGORY,
+  FILTER,
   UPDATE_BRAND_FILTER,
   UPDATE_CATEGORY_FILTER,
 } from '../actions/types';
@@ -54,7 +53,7 @@ export default (state = initialState, action) => {
         };
       }
 
-    case FILTER_BY_BRAND:
+    case FILTER:
       if (
         state.categoriesToFilter.length === 0 &&
         state.brandsToFilter.length === 0
@@ -65,11 +64,16 @@ export default (state = initialState, action) => {
         };
       }
 
-      if (state.brandsToFilter.length === 0) {
+      if (
+        state.categoriesToFilter.length > 0 &&
+        state.brandsToFilter.length > 0
+      ) {
         return {
           ...state,
-          filteredProducts: state.products.filter((item) =>
-            state.categoriesToFilter.includes(item.category)
+          filteredProducts: state.products.filter(
+            (item) =>
+              state.brandsToFilter.includes(item.brand) &&
+              state.categoriesToFilter.includes(item.category)
           ),
         };
       }
@@ -77,31 +81,13 @@ export default (state = initialState, action) => {
       if (state.categoriesToFilter.length > 0) {
         return {
           ...state,
-          filteredProducts: state.filteredProducts.filter((item) =>
-            state.brandsToFilter.includes(item.brand)
+          filteredProducts: state.products.filter((item) =>
+            state.categoriesToFilter.includes(item.category)
           ),
         };
       }
 
-      return {
-        ...state,
-        filteredProducts: state.products.filter((item) =>
-          state.brandsToFilter.includes(item.brand)
-        ),
-      };
-
-    case FILTER_BY_CATEGORY:
-      if (
-        state.categoriesToFilter.length === 0 &&
-        state.brandsToFilter.length === 0
-      ) {
-        return {
-          ...state,
-          filteredProducts: state.products,
-        };
-      }
-
-      if (state.categoriesToFilter.length === 0) {
+      if (state.brandsToFilter.length > 0) {
         return {
           ...state,
           filteredProducts: state.products.filter((item) =>
@@ -110,20 +96,9 @@ export default (state = initialState, action) => {
         };
       }
 
-      if (state.brandsToFilter.length > 0) {
-        return {
-          ...state,
-          filteredProducts: state.filteredProducts.filter((item) =>
-            state.categoriesToFilter.includes(item.category)
-          ),
-        };
-      }
-
       return {
         ...state,
-        filteredProducts: state.products.filter((item) =>
-          state.categoriesToFilter.includes(item.category)
-        ),
+        filteredProducts: state.products,
       };
 
     default:

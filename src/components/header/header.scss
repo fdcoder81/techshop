@@ -53,3 +53,17 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .header {
+    .logo-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      img {
+        width: 20rem;
+      }
+    }
+  }
+}
