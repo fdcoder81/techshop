@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/techshop/static/css/main.38fccaff.chunk.css",
-    "main.js": "/techshop/static/js/main.2e3cd1ef.chunk.js",
-    "main.js.map": "/techshop/static/js/main.2e3cd1ef.chunk.js.map",
+    "main.js": "/techshop/static/js/main.e4cb756a.chunk.js",
+    "main.js.map": "/techshop/static/js/main.e4cb756a.chunk.js.map",
     "runtime-main.js": "/techshop/static/js/runtime-main.78778bd7.js",
     "runtime-main.js.map": "/techshop/static/js/runtime-main.78778bd7.js.map",
     "static/css/2.d34346ea.chunk.css": "/techshop/static/css/2.d34346ea.chunk.css",
     "static/js/2.bd0c3069.chunk.js": "/techshop/static/js/2.bd0c3069.chunk.js",
     "static/js/2.bd0c3069.chunk.js.map": "/techshop/static/js/2.bd0c3069.chunk.js.map",
     "index.html": "/techshop/index.html",
-    "precache-manifest.b5e28202a7742a3002bbafc1a0008885.js": "/techshop/precache-manifest.b5e28202a7742a3002bbafc1a0008885.js",
+    "precache-manifest.f1e9b5478701c0f41e5df2577812e043.js": "/techshop/precache-manifest.f1e9b5478701c0f41e5df2577812e043.js",
     "service-worker.js": "/techshop/service-worker.js",
     "static/css/2.d34346ea.chunk.css.map": "/techshop/static/css/2.d34346ea.chunk.css.map",
     "static/css/main.38fccaff.chunk.css.map": "/techshop/static/css/main.38fccaff.chunk.css.map",
@@ -42,6 +42,6 @@
     "static/css/2.d34346ea.chunk.css",
     "static/js/2.bd0c3069.chunk.js",
     "static/css/main.38fccaff.chunk.css",
-    "static/js/main.2e3cd1ef.chunk.js"
+    "static/js/main.e4cb756a.chunk.js"
   ]
 }
